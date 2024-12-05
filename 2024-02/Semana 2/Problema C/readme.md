@@ -1,0 +1,6 @@
+Solución y análisis:
+Se recibe el tamaño del arreglo con los números, almacenado en n y también un número x, el cual es el objetivo de encontrar en los subarreglos. Primero se recibe el arreglo por input en un ciclo, luego comienza la lógica del problema, para esto se usa una técnica simulando dos punteros, uno controlando izquierda y el otro controlando derecha (l y r), entonces la idea es ir verificando que entre el rango de un subarreglo exista ese “x”, para esto se comienza desde el inicio del vector, luego si es que la suma es igual a x, se suma 1 al contador y se amplía el rango a la derecha para seguir buscando más subarreglos, si es que la suma es menor a x, entonces se amplía el rango hacia la derecha, si es que la suma es mayor a x, se reduce el rango desde la izquierda, de esta manera se va actualizando el valor de la suma entre el rango l,r dependiendo de que caso sea.
+
+Analizando la complejidad temporal, como se simulan dos punteros moviéndose, cada elemento puede ser consultado un máximo de  dos veces (2n), finalmente resultando en una complejidad perteneciente a O(n). 
+
+Analizando la complejidad espacial, se usa un vector, resultando en complejidad perteneciente a O(n).
